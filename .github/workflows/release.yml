@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    tags: ['v*']
+    tags: ["v*"]
   workflow_dispatch:
     inputs:
       version:
@@ -35,9 +35,9 @@ jobs:
       require-signed-tag: true
       strict-checks: true
       ci-check-events: '["push"]'
-      node-version: '24'
+      node-version: "24"
       package-manager: bun
-      package-manager-version: '1.4.1'
+      package-manager-version: "1.4.1"
       test-command: bun run ci
       build-command: bun run build:npm
       smoke-command: bslog --version && bslog --help
