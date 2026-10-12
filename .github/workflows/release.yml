@@ -40,4 +40,4 @@ jobs:
       package-manager-version: "1.4.1"
       test-command: bun run ci
       build-command: bun run build:npm
-      smoke-command: ./node_modules/.bin/bslog --version && ./node_modules/.bin/bslog --help
+      smoke-command: node ./node_modules/@steipete/bslog/dist/index.js --version && node ./node_modules/@steipete/bslog/dist/index.js --help
